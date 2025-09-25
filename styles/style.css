@@ -5,6 +5,7 @@
   --buttons-color: #042c09;
   --background-color: #ffe924;
   --try-color: #345c21;
+  --backdrop: linear-gradient(#345c21, #042c09);
   --shadow-color: rgb(105, 99, 99);
   --font-main: "Arial", sans-serif;
 }
@@ -16,11 +17,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+button {
+  font-family: "Poppins", sans-serif;
+}
+
 /*header*/
 #header {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 200px;
   align-items: center;
   padding: 20px;
   position: sticky;
@@ -31,25 +36,26 @@
 }
 #header .logo {
   width: 150px;
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--background-color);
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--background-color);
 }
 #header ul {
   display: flex;
   list-style: none;
-    align-items: center;
+  align-items: center;
 }
 #header ul li {
   margin: 0 10px;
 }
 #header ul li a {
   text-decoration: none;
-  color:var(--background-color);
+  color: var(--background-color);
   font-weight: 500;
+  transition: 0.5s ease-in;
 }
 #header ul li a:hover {
-  color:var(--try-color);
+  color: var(--try-color);
 }
 #header .cart a {
   text-decoration: none;
@@ -58,4 +64,51 @@
 }
 #header .cart a:hover {
   color: var(--try-color);
+}
+
+/*hero*/
+#hero {
+  background: var(--backdrop) no-repeat center/cover;
+  color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 60px 20px;
+  min-height: 90vh;
+}
+#hero span {
+  font-size: 14px;
+  color: var(--buttons-color);
+  margin-bottom: 10px;
+  border: 1px solid var(--try-color);
+  border-radius: 30px;
+  box-sizing: border-box;
+  width: fit-content;
+  padding: 5px 15px;
+  align-self: center;
+}
+#hero h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+#hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+#hero .hero-btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+#hero .hero-btn a {
+  text-decoration: none;
+  color: var(--background-color);
+  background-color: var(--try-color);
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: background-color 0.3s, color 0.3s;
 }
