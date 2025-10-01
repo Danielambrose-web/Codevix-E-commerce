@@ -1,10 +1,9 @@
 /*root*/
 :root {
   --primary-color: #14b82a;
-  --secondary-color: #161515;
   --buttons-color: #042c09;
-  --background-color: #ffe924;
   --try-color: #345c21;
+  --pure: white;
   --backdrop: linear-gradient(#345c21, #042c09);
   --shadow-color: rgb(105, 99, 99);
   --font-main: "Arial", sans-serif;
@@ -37,8 +36,8 @@ button {
 #header .logo {
   width: 150px;
   font-size: 24px;
-  font-weight: bold;
-  color: var(--background-color);
+  font-weight: bolder;
+  color: var(--pure);
 }
 #header ul {
   display: flex;
@@ -50,17 +49,19 @@ button {
 }
 #header ul li a {
   text-decoration: none;
-  color: var(--background-color);
+  color: var(--pure);
   font-weight: 500;
   transition: 0.5s ease-in;
+  font-weight: bolder;
 }
 #header ul li a:hover {
   color: var(--try-color);
 }
 #header .cart a {
   text-decoration: none;
-  color: var(--background-color);
+  color: var(--pure);
   font-weight: 500;
+  font-weight: bolder;
 }
 #header .cart a:hover {
   color: var(--try-color);
@@ -69,7 +70,7 @@ button {
 /*hero*/
 #hero {
   background: var(--backdrop) no-repeat center/cover;
-  color: var(--background-color);
+  color: var(--pure);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -78,19 +79,21 @@ button {
   min-height: 90vh;
 }
 #hero span {
-  font-size: 14px;
-  color: var(--buttons-color);
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--pure);
   margin-bottom: 10px;
-  border: 1px solid var(--try-color);
+  border: 1.5px solid var(--try-color);
   border-radius: 30px;
   box-sizing: border-box;
   width: fit-content;
-  padding: 5px 15px;
+  padding: 15px 15px;
   align-self: center;
 }
 #hero h1 {
-  font-size: 70px;
+  font-size: 90px;
   margin-bottom: 20px;
+  font-weight: bolder;
 }
 #hero p {
   font-size: 20px;
@@ -107,7 +110,7 @@ button {
   background-color: var(--try-color);
   padding: 10px 25px;
   border-radius: 30px;
-  font-size: 16px;
+  font-size: 24px;
   text-transform: uppercase;
   box-shadow: 0 4px 8px var(--shadow-color);
   transition: background-color 0.3s, color 0.3s;
@@ -124,67 +127,71 @@ button {
   margin-bottom: 10px;
 }
 #features p {
-  color: #7b1fa2;
+  color: var(--buttons-color);
   font-size: 16px;
   margin-bottom: 40px;
+  font-weight: bolder;
 }
 .features-cards {
   display: flex;
-  justify-content: center;
-  gap: 25px;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0;
+  box-sizing: border-box;
 }
 .features-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 300px;
-  text-align: left;
-  transition: transform 0.3s ease;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin: 40px auto;
+      overflow: hidden;
+      text-align: center;
+      background-color: var(--pure);
 }
-.features-card:hover {
+/*.features-card:hover {
   transform: translateY(-8px);
-}
+}*/
 .features-img {
   width: 100%;
-  height: 220px; /* space reserved for your images */
-  background: #f5f5f5;
+  height: 250px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #eee;
+  padding-top: 0;
+  margin: 0;
+  border-radius: 10px;
 }
 .features-img img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 .features-card-info {
   padding: 15px;
+  background-color: var(--try-color);
 }
-.features-card-infoh3 {
+.features-card-info h3 {
   font-size: 16px;
   font-weight: 600;
   margin: 0 0 8px;
+  color: var(--pure);
 }
-.features-card-info p {
+.features-card-info p{
   font-size: 14px;
-  color: #555;
   margin: 0 0 12px;
   line-height: 1.5;
+  text-align: center;
+  color: var(--pure);
 }
 .price {
   font-size: 18px;
   font-weight: 700;
-  color: #7b1fa2;
+  color: var(--pure);
   margin-right: 10px;
 }
 .buy-btn {
   display: inline-block;
   padding: 6px 14px;
-  background: #7b1fa2;
-  color: #fff;
+  background: var(--pure);
+  color: var(--primary-color);
   font-size: 13px;
   border-radius: 20px;
   text-decoration: none;
@@ -193,11 +200,12 @@ button {
 #view-all {
   margin-top: 25px;
   text-decoration: none;
-  padding: 10px 20px;
-  border: 2px solid #7b1fa2;
+  padding: 15px 25px;
+  color: var(--background-color);
+  background-color: var(--try-color);
   border-radius: 25px;
-  color: #7b1fa2;
   font-weight: 500;
+  box-shadow: 0 4px 8px var(--shadow-color);
   transition: all 0.3s ease;
 }
 
@@ -225,8 +233,8 @@ button {
 .cta-btn {
   display: inline-block;
   padding: 12px 28px;
-  background: #fff;
-  color: #7b1fa2;
+  background: var(--buttons-color);
+  color: var(--pure);
   font-weight: 600;
   border-radius: 30px;
   text-decoration: none;
@@ -234,7 +242,7 @@ button {
 }
 
 .cta-btn:hover {
-  background: #eee;
+  background: var(--pure);
 }
 
 /* Footer Section */
@@ -266,7 +274,7 @@ button {
 .footer p {
   font-size: 14px;
   line-height: 1.6;
-  color: #ddd;
+  color: var(--pure);
 }
 
 .footer ul {
@@ -281,19 +289,19 @@ button {
 
 .footer ul li a {
   text-decoration: none;
-  color: #ddd;
+  color: var(--pure);
   font-size: 14px;
   transition: color 0.3s ease;
 }
 
 .footer ul li a:hover {
-  color: #fff;
+  color: var(--pure);
 }
 
 /* Contact */
 .contact-info {
   font-size: 14px;
-  color: #ddd;
+  color: var(--pure);
   margin-bottom: 8px;
 }
 
@@ -311,13 +319,13 @@ button {
   border-radius: 50%;
   text-align: center;
   line-height: 34px;
-  color: #fff;
+  color: var(--pure);
   font-size: 16px;
   transition: background 0.3s ease;
 }
 
 .social-icons a:hover {
-  background: #9c27b0;
+  background: var(--try-color);
 }
 
 /* Copyright */
@@ -325,7 +333,7 @@ button {
   margin-top: 40px;
   text-align: center;
   font-size: 13px;
-  color: #bbb;
+  color: var(--pure);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 15px;
 }
