@@ -12,20 +12,30 @@
 </head>
 
 <body>
-    <!--Header-->
-    <section id="header">
-        <div class="logo">CODEVIX</div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+     <!-- Header -->
+  <section id="header">
+      <!-- Logo (always visible) -->
+      <div class="logo">CODEVIX</div>
 
-        </ul>
+      <!-- Nav Links -->
+      <ul id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+
+      <!-- Right section for cart + menu -->
+      <div class="right-section">
         <div class="cart">
             <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
         </div>
-    </section>
+        <!-- Menu icon -->
+        <span id="menu-btn" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+      </div>
+  </section>
 
     <!--hero-->
     <section id="hero">
@@ -137,6 +147,24 @@
         </div>
     </footer>
 
+
+      <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const navLinks = document.getElementById('nav-links');
+  const menuIcon = menuBtn.querySelector('i');
+
+  menuBtn.addEventListener('click', () => {
+    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    // Toggle icon between bars and X
+    if (menuIcon.classList.contains('fa-bars')) {
+      menuIcon.classList.remove('fa-bars');
+      menuIcon.classList.add('fa-times');
+    } else {
+      menuIcon.classList.remove('fa-times');
+      menuIcon.classList.add('fa-bars');
+    }
+  });
+</script>
 </body>
 
 </html>
