@@ -19,10 +19,10 @@ const pencils = document.querySelectorAll(".features-card");
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    // Remove active from all buttons
-    //filterButtons.forEach(btn => btn.classList.remove("active"));
+    /* Remove active from all buttons
+    ilterButtons.forEach(btn => btn.classList.remove("active"));
     // Add active to clicked button
-    //button.classList.add("active");
+    button.classList.add("active"); */
 
     const filter = button.getAttribute("data-filter");
     pencils.forEach((item) => {
