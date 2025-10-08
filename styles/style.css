@@ -473,7 +473,7 @@ margin: 0px;
 
 .story-box {
   flex: 1 1 300px;
-  background: linear-gradient(135deg,--backdrop);
+  background:var(--backdrop) ;
   color: #fff;
   padding: 80px 20px;
   text-align: center;
@@ -517,7 +517,7 @@ margin: 0px;
 }
 
 .mission-quote {
-  background: linear-gradient(135deg,--backdrop);
+  background:var(--backdrop);
   color: #fff;
   padding: 30px;
   border-radius: 15px;
