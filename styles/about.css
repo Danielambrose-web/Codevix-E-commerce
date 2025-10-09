@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #14b82a;
+  --buttons-color: #042c09;
+  --try-color: #345c21;
+  --dark: black;
+  --pure: white;
+  --backdrop: linear-gradient(#345c21, #042c09);
+  --shadow-color: rgb(105, 99, 99);
+  --font-main: "Arial", sans-serif;
+}
+/* Story Section */
+.story {
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.story-text {
+  flex: 1 1 400px;
+}
+
+.story-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.story-text p {
+  color: var(--buttons-color);
+  margin-bottom: 1rem;
+}
+
+.story-box {
+  flex: 1 1 300px;
+  background: var(--backdrop);
+  color: var(--pure);
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.story-box h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.story-box p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .story {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  section {
+    padding: 40px 5%;
+  }
+}
+.why-choose-us {
+  text-align: center;
+  background-color:var(--try-color);
+  padding: 80px 20px;
+  color: var(--pure);
+}
+
+.why-choose-us h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--dark);
+  margin-bottom: 50px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature {
+  padding: 30px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  background-color: var(--primary-color);
+  color: var(--pure);
+  font-size: 1.8rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.feature h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  color: var(--dark);
+  line-height: 1.6;
+}
+/* Mission Section */
+.mission {
+  text-align: center;
+  margin: 20px;
+}
+
+.mission h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mission p {
+  color: var(--buttons-color);
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.mission-quote {
+  background:var(--backdrop);
+  color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.mission-quote small {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: 400;
+}
+/* Stats Section */
+.stats {
+  background: var(--try-color);
+  color: var(--pure);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  padding: 40px 10%;
+}
+
+.stat {
+  flex: 1 1 250px;
+  margin: 20px 0;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  color: var(--pure);
+  margin-bottom: 5px;
+}

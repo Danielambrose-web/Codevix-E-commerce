@@ -217,17 +217,35 @@ margin: 0px;
   display: none;
 }
 .features-img {
-  width: 100%;
-  height: 250px;
-  display: flex;
-  padding-top: 0;
-  margin: 0;
-  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 .features-img img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 10px 10px 0 0;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  display: block;
+}
+.cart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #a020f0;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.features-card:hover .cart-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+.cart-icon:hover {
+  background: #7c0fd6;
 }
 .features-card-info {
   padding: 15px;
@@ -532,3 +550,81 @@ margin: 0px;
   font-style: italic;
   font-weight: 400;
 }
+
+/*cart page*/
+    .cart-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .cart-items {
+      width: 65%;
+    }
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .cart-item img {
+      width: 70px;
+      border-radius: 8px;
+    }
+    .item-details {
+      flex: 1;
+      margin-left: 10px;
+    }
+    .item-details h3 {
+      margin: 0;
+      font-size: 1rem;
+    }
+    .item-details p {
+      color: #a020f0;
+      font-weight: bold;
+    }
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .quantity button {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      background: #f8f8f8;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .summary {
+      width: 30%;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .summary h2 {
+      margin-top: 0;
+    }
+    .summary p {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+    }
+    .checkout {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .empty {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 1.2rem;
+      color: #777;
+    }
