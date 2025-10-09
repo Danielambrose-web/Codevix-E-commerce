@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/head_foot.css">
+    <link rel="stylesheet" href="./styles/product.css">
 </head>
 
 <body>
@@ -22,13 +23,13 @@
           <li><a href="#">Home</a></li>
           <li><a href="product.html">Products</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
       </ul>
 
       <!-- Right section for cart + menu -->
       <div class="right-section">
         <div class="cart">
-            <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
         </div>
         <!-- Menu icon -->
         <span id="menu-btn" class="menu-icon">
@@ -60,6 +61,12 @@
             <div class="features-card">
                 <div class="features-img">
                     <img src="./imgs/www.png" alt="">
+                                <button
+              class="cart-icon"
+              onclick="addToCart('Premium Casual Hoodie', 79.99, './imgs/www.png')"
+            >
+              🛒
+            </button>
                 </div>
                 <div class="features-card-info">
                     <h3 class="card-title">Elegant Evening Dress</h3>
@@ -74,6 +81,12 @@
             <div class="features-card">
                 <div class="features-img">
                     <img src="./imgs/www.png" alt="">
+                                <button
+              class="cart-icon"
+              onclick="addToCart('Premium Casual Hoodie', 79.99, './imgs/www.png')"
+            >
+              🛒
+            </button>
                 </div>
                 <div class="features-card-info">
                     <h3 class="card-title">Elegant Evening Dress</h3>
@@ -87,6 +100,12 @@
             <div class="features-card">
                 <div class="features-img">
                     <img src="./imgs/www.png" alt="">
+                                <button
+              class="cart-icon"
+              onclick="addToCart('Premium Casual Hoodie', 79.99, './imgs/www.png')"
+            >
+              🛒
+            </button>
                 </div>
                 <div class="features-card-info">
                     <h3 class="card-title">Premium Casual Hoodie</h3>
@@ -101,6 +120,12 @@
             <div class="features-card">
                 <div class="features-img">
                     <img src="./imgs/www.png" alt="">
+                                <button
+              class="cart-icon"
+              onclick="addToCart('Premium Casual Hoodie', 79.99, './imgs/www.png')"
+            >
+              🛒
+            </button>
                 </div>
                 <div class="features-card-info">
                     <h3 class="card-title">Premium Casual Hoodie</h3>
@@ -141,16 +166,17 @@
             <div class="footer-col">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Contact</a></li>
+
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
             <!-- Column 3 -->
             <div class="footer-col">
                 <h3>Contact Us</h3>
-                <p class="contact-info"> danielessien@gmail.com.com</p>
+                <p class="contact-info"> danielessien@gmail.com</p>
                 <p class="contact-info"> +234 704 625 3879</p>
             </div>
         </div>
@@ -161,7 +187,8 @@
     </footer>
 
 
-      <script src="./js/main.js"></script>
+      <script src="./js/filter.js"></script>
+          <script src="./js/sript.js"></script>
 </body>
 
 </html>
