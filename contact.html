@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEVIX</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/head_foot.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <!-- Logo (always visible) -->
+      <div class="logo">CODEVIX</div>
+
+      <!-- Nav Links -->
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- Right section for cart + menu -->
+      <div class="right-section">
+        <div class="cart">
+          <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+        </div>
+        <!-- Menu icon -->
+        <span id="menu-btn" class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h1>Get in Touch</h1>
+      <p>
+        Have questions about our products or need assistance? We’d love to hear
+        from you.<br />
+        Reach out and let's start a conversation!
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+          <label for="name">Name *</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="subject">Subject *</label>
+          <input
+            type="text"
+            id="subject"
+            placeholder="Enter subject"
+            required
+          />
+
+          <label for="message">Message *</label>
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+          <p class="response-time">
+            We'll respond to your message within 24 hours.
+          </p>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h2>Other Ways to Reach Us</h2>
+        <p class="info-sub">
+          Choose the method that works best for you. We're here to help!
+        </p>
+
+        <div class="info-box">
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <h3>Email Us</h3>
+            <p>danielessientech121@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <h3>Call Us</h3>
+            <p>+2347046253879</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div>
+            <h3>WhatsApp</h3>
+            <p>Chat with us instantly</p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <h3>Visit Us</h3>
+            <p>35 Etim Okon Usanga, Uyo</p>
+          </div>
+        </div>
+
+        <div class="quick-help">
+          <h3>Need Quick Help?</h3>
+          <p>
+            Chat with us on WhatsApp for instant support and product inquiries.
+          </p>
+          <a href="#" class="chat-btn"
+            ><i class="fa-brands fa-whatsapp"></i> Chat Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <h3>CODEVIX</h3>
+          <p>
+            Discover the latest in fashion with our curated collection of
+            premium clothing. Style meets comfort in every piece we offer.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <!-- Facebook -->
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <!-- Instagram -->
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <!-- Twitter -->
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Products</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <p class="contact-info">danielessientech121@gmail</p>
+          <p class="contact-info">+234 704 625 3879</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">2025 daniel essien. All rights reserved.</div>
+    </footer>
+
+    <script src="./js/sript.js"></script>
+  </body>
+</html>
